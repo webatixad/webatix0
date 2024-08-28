@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI assistant</title>
+    <h2>AI assistant for you</h2>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        #chat-container {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgb(226, 226, 226);
+            max-width: 400px;
+            margin: auto;
+        }
+        #messages {
+            height: 200px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        .message {
+            margin: 5px 0;
+        }
+        .user-message {
+            text-align: right;
+            color: rgb(3, 3, 83);
+        }
+        .bot-message {
+            text-align: left;
+            color: green;
+        }
+        input[type="text"] {
+            width: calc(100% - 100px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="chat-container">
+        <div id="messages"></div>
+        <input type="text" id="user-input" placeholder="Type your message..." required>
+        <button id="send-button">Send</button>
+    </div>
+
+    <script>
+        // JavaScript Functionality
+        document.getElementById('send-button').addEventListener('click', function() {
+            const userInput = document.getElementById('user-input');
+            const messageText = userInput.value;
+
+            if (messageText.trim() === "") return; // Prevent sending empty messages
+
+            // Display user message
+            const messagesDiv = document.getElementById('messages');
+            messagesDiv.innerHTML += `<div class="message user-message">${messageText}</div>`;
+            userInput.value = ""; // Clear input field
+
+            // Simulate bot response
+            setTimeout(() => {
+                const botResponse = "Assistant: AI assistant is currently out of service you can email on webatixorderportal@gmail.com for any query"  // Simple echo response
+                messagesDiv.innerHTML += `<div class="message bot-message">${botResponse}</div>`;
+                messagesDiv.scrollTop = messagesDiv.scrollHeight; // Scroll to the bottom
+            }, 1000); // Simulate a delay for the bot response
+        });
+    </script>
+
+</body>
+</html>

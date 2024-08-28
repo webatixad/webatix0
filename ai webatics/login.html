@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login box</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="form-container">
+  <form id="login-form" class="form">
+    <h2>Login to continue</h2>
+  <h1><input type="text" id="username" placeholder="Email or Username" required></h1>   <input type="text" id="name" placeholder="name" required>
+    <input type="number" id="phone number" placeholder="phone number" required><h1></h1>
+    <button id = "gywbutton" onclick="gotoanotherweb1()" >login</button><script src = "script.js"></script><script src = "login.js"></script>
+
+ </div>
+</body>
+</html>
+
+<div class="bg-image"></div>
+
+<link rel="preload" as="image" href="C:\Users\disha\Desktop\ai webatics\CDG_blog_post_image_06-850x412.jpg">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accept Cookies Button</title>
+    <style>
+        /* Basic styling for the cookie consent banner */
+        #cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            display: none; /* Initially hidden */
+        }
+
+        .accept-button {
+            padding: 10px 20px;
+            background-color: #b9f5bb; /* Green */
+            color: rgb(255, 204, 204);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .accept-button:hover {
+            background-color: #88abec; /* Darker green */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="cookie-banner">
+        This website uses cookies to ensure you get the best experience on our website.
+        <button class="accept-button" id="accept-cookies">Accept Cookies</button>
+    </div>
+
+    <script>
+        // Show the cookie banner when the page loads
+        window.onload = function() {
+            document.getElementById('cookie-banner').style.display = 'block';
+        };
+
+        // Handle the click event for the Accept Cookies button
+        document.getElementById('accept-cookies').addEventListener('click', function() {
+            alert('Cookies accepted!'); // Action to perform on button click
+            document.getElementById('cookie-banner').style.display = 'none'; // Hide the banner
+        });
+    </script>
+
+</body>
+</html>

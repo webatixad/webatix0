@@ -1,0 +1,404 @@
+/* Example CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color:   
+ #006d18;
+    padding: 10px;
+}
+
+/* ... more CSS styles ... */
+.template1 {
+    
+}
+
+
+
+/* ... more CSS styles ... */
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('your-background-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #030000; /* White text for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Stronger text shadow */
+  }
+  
+  h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  h4 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    display: flex; /* Make the ul a flex container */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center the items horizontally */
+  }
+  
+  li {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  li:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+  }
+  
+  h5 {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #dd7e7e;
+  }
+
+  li, #gywbutton {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    width: 80%;
+    position-
+  }
+  
+  li:hover, #gywbutton:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor : pointer;
+    
+  }
+  
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #2a661b;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #00ffff;
+  color: rgb(248, 20, 20);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@media screen and (max-width: 600px) {
+  .form-container {
+    width: 90%;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+<button id = "login" onclick="gotoanotherweb(in2dex.html)" >login</button>
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set base font and colors */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Container for content */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header styles */
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+/* Navigation styles */
+nav {
+  float: right;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  padding: 0 20px;
+}
+
+nav a:hover {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+/* Main content area */
+main {
+  padding: 20px 0;
+}
+
+/* Sections */
+.section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1, h2, h3 {
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #e8491d;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background: #333333;
+}
+
+/* Footer */
+footer {
+  background: #35424a;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Responsive design */
+@media(max-width: 768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  .container {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 20px;
+  }
+}
+.login-btn {
+  /* Basic button styles */
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+  /* Color scheme */
+  background-color: #4CAF50;
+  color: white;
+  
+  /* Transition for smooth hover effect */
+  transition: all 0.3s ease;
+  
+  /* Box shadow for depth */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  
+  /* Text shadow for better contrast */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover state */
+.login-btn:hover {
+  background-color: #45a049;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Active state (when button is pressed) */
+.login-btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
+}
+
+/* Focus state for accessibility */
+.login-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.5);
+}
+
+/* Optional: Add a subtle gradient */
+.login-btn {
+  background-image: linear-gradient(to bottom, #4CAF50, #45a049);
+}
+
+/* Optional: Add a pulsing animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+  }
+}
+
+.login-btn:hover {
+  animation: pulse 1.5s infinite;
+}
+.bg-image {
+  background-image: url('C:\Users\disha\Desktop\ai webatics\CDG_blog_post_image_06-850x412.jpg');
+  height: 100vh; /* This makes the div take up the full viewport height */
+  width: 100%; /* This makes the div take up the full width */
+}
+#aboutUsBtn {
+    width: 10px; /* Adjust this value as needed */
+    padding: 10px;
+    /* Other styles... */
+}
+
